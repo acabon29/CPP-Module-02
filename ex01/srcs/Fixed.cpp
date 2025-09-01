@@ -18,7 +18,6 @@ Fixed::Fixed( const int rawBits )
 Fixed::Fixed( float floatNumber )
 {
 
-	// convertir le float 
 	_fixedPointValue = roundf(floatNumber * (1 << _fractionalBits));
 	std::cout << "Float constructor called" << std::endl;
 }
